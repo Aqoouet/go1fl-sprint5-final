@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Aqoouet/go1fl-sprint5-final/internal/common"
+	"github.com/Aqoouet/go1fl-sprint5-final/tree/main/internal/common"
 )
 
 // distance calculates distance using number of steps and height
