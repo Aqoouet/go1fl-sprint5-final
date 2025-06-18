@@ -2,7 +2,7 @@
 
 // It includes:
 // - A DaySteps struct for storing walk-related data.
-// - Exported methods for parsing input strings and generating informational output.
+// - Exported methods (Parse and ActionInfo) for parsing input strings and generating informational output.
 
 // The package is intended to be used across different modules of the project,
 // and therefore uses exported identifiers to ensure accessibility.
