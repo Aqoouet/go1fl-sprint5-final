@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Aqoouet/go1fl-sprint5-final/tree/main/internal/common"
+	"github.com/Aqoouet/go1fl-sprint5-final/internal/common"
 )
 
 // distance calculates distance using number of steps and height
-func distance(steps int, height float64) float64 {
+func Distance(steps int, height float64) float64 {
 	stepLength := common.StepLengthCoefficient * height
 	distanceM := stepLength * float64(steps)
 	distanceKm := distanceM / common.MinKm
@@ -17,11 +17,11 @@ func distance(steps int, height float64) float64 {
 
 // meanSpeed takes number of steps, height and activity duration.
 // Returns mean speed.
-func meanSpeed(steps int, height float64, duration time.Duration) float64 {
+func MeanSpeed(steps int, height float64, duration time.Duration) float64 {
 	if steps <= 0 {
 		return 0.
 	}
-	d := distance(steps, height)
+	d := Distance(steps, height)
 	hours := duration.Hours()
 
 	if hours <= 0 {
@@ -50,7 +50,7 @@ func RunningSpentCalories(steps int, weight, height float64, duration time.Durat
 		return 0, fmt.Errorf("duration = %v,  expected non-negative and non-zero duration: %w", duration, common.ErrParamLimitExceeded)
 	}
 
-	mSpeed := meanSpeed(steps, height, duration)
+	mSpeed := MeanSpeed(steps, height, duration)
 	durationInMinutes := duration.Minutes()
 
 	return (weight * mSpeed * durationInMinutes) / common.MinInH, nil
