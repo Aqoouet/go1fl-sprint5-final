@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-package actioninfo
-
-type DataParser interface {
-	// TODO: добавить методы
-}
-
-func Info(dataset []string, dp DataParser) {
-	// TODO: реализовать функцию
-=======
 // Package actioninfo provides functionality for summarizing and displaying general information
 // about various training sessions and daily walks.
 
@@ -56,5 +46,4 @@ func Info(dataset []string, dp DataParser) {
 		fmt.Println(msg)
 
 	}
->>>>>>> modif
 }

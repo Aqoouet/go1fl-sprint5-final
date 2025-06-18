@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-package daysteps
-
-type DaySteps struct {
-	// TODO: добавить поля
-}
-
-func (ds *DaySteps) Parse(datastring string) (err error) {
-	// TODO: реализовать функцию
-}
-
-func (ds DaySteps) ActionInfo() (string, error) {
-	// TODO: реализовать функцию
-=======
 // Package daysteps provides functionality for processing and describing daily walking data.
 
 // It includes:
@@ -121,5 +107,4 @@ func (ds DaySteps) ActionInfo() (string, error) {
 		"Вы сожгли %.2f ккал.\n",
 		steps, distanceKm, calories), nil
 
->>>>>>> modif
 }

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-package trainings
-
-type Training struct {
-	// TODO: добавить поля
-}
-
-func (t *Training) Parse(datastring string) (err error) {
-	// TODO: реализовать функцию
-}
-
-func (t Training) ActionInfo() (string, error) {
-	// TODO: реализовать функцию
-=======
 // Package trainings provides utilities for parsing training data strings and generating
 // formatted information strings based on the parsed data.
 
@@ -147,5 +133,4 @@ func (t Training) ActionInfo() (string, error) {
 
 	return b.String(), nil
 
->>>>>>> modif
 }

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-package personaldata
-
-type Personal struct {
-	// TODO: добавить поля
-}
-
-func (p Personal) Print() {
-	// TODO: реализовать функцию
-=======
 // Package for storing of structure Personal used across the project.
 
 package personaldata
@@ -28,5 +18,4 @@ func (p Personal) Print() {
 Рост: %.2f м.
 
 `, p.Name, p.Weight, p.Height)
->>>>>>> modif
 }
