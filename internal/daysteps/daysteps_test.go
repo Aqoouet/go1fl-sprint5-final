@@ -4,11 +4,7 @@ import (
 	"testing"
 	"time"
 
-<<<<<<< HEAD
-	"github.com/Yandex-Practicum/tracker/internal/personaldata"
-=======
 	"github.com/Aqoouet/go1fl-sprint5-final/internal/personaldata"
->>>>>>> modif
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
