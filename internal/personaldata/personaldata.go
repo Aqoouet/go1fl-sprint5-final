@@ -1,9 +1,21 @@
+// Package for storing of structure Personal used across the project.
+
 package personaldata
 
+import "fmt"
+
+// Structure for storing user data
 type Personal struct {
-	// TODO: добавить поля
+	Name   string
+	Weight float64
+	Height float64
 }
 
+// Method for user data printing
 func (p Personal) Print() {
-	// TODO: реализовать функцию
+	fmt.Printf(`Имя: %s
+Вес: %.2f кг.
+Рост: %.2f м.
+
+`, p.Name, p.Weight, p.Height)
 }
