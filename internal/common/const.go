@@ -1,6 +1,7 @@
+// Package for common constants used across the project.
+
 package common
 
-// Основные константы, необходимые для расчетов.
 const (
 	StepLength                 = 0.65 // средняя длина шага.
 	MinKm                      = 1000 // количество метров в километре.

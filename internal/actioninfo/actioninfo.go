@@ -1,3 +1,14 @@
+// Package actioninfo provides functionality for summarizing and displaying general information
+// about various training sessions and daily walks.
+
+// It defines:
+//   - An interface DataParser with methods Parse() and ActionInfo()
+//   - A function Info() that accepts data slices and struct instances (e.g., Training and DaySteps)
+//     to generate a consolidated output
+
+// The package supports modular design by working with interfaces,
+// making it flexible for use with different data types and structures.
+
 package actioninfo
 
 import (
@@ -22,14 +33,14 @@ func Info(dataset []string, dp DataParser) {
 
 		if err != nil {
 			log.Println(err)
-			return
+			continue
 		}
 
 		msg, err := dp.ActionInfo()
 
 		if err != nil {
 			log.Println(err)
-			return
+			continue
 		}
 
 		fmt.Println(msg)

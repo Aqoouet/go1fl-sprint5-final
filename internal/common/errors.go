@@ -1,3 +1,5 @@
+// Package for common errors used across the project.
+
 package common
 
 import (
