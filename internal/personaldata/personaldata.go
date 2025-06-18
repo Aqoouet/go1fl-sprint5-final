@@ -1,3 +1,5 @@
+// Package for storing of structure Personal used across the project.
+
 package personaldata
 
 import "fmt"

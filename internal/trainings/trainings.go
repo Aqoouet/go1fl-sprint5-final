@@ -1,3 +1,13 @@
+// Package trainings provides utilities for parsing training data strings and generating
+// formatted information strings based on the parsed data.
+
+// It includes two main methods:
+//   - Parse: processes incoming training data string into structured format.
+//   - ActionInfo: generates a descriptive output string about the trainings.
+
+// These methods are intended to be used across different packages in the project,
+// and therefore are exported.
+
 package trainings
 
 import (

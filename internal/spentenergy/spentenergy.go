@@ -1,3 +1,9 @@
+// Package spentenergy provides functions for calculating calories burned during physical activities
+// such as walking and running. It also includes utilities for calculating average speed and distance.
+
+// These functions are intended to be used across different packages within the project,
+// so all public methods are exported and follow Go's naming conventions.
+
 package spentenergy
 
 import (

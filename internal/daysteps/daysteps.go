@@ -1,3 +1,12 @@
+// Package daysteps provides functionality for processing and describing daily walking data.
+
+// It includes:
+// - A DaySteps struct for storing walk-related data.
+// - Exported methods for parsing input strings and generating informational output.
+
+// The package is intended to be used across different modules of the project,
+// and therefore uses exported identifiers to ensure accessibility.
+
 package daysteps
 
 import (
